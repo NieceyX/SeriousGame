@@ -18,13 +18,13 @@ public class BreakingObject : MonoBehaviour
         
     }
 
+    
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("aaa");
         if (collision.gameObject.layer == LayerMask.NameToLayer("Weapon"))
         {
             /*   Instantiate(AfterBreak, this.transform.position, Quaternion.identity);*/
-            Instantiate(AfterBreak, this.transform.position, Quaternion.identity).transform.localScale = new Vector3(50, 50, 50);
+            Instantiate(AfterBreak, this.transform.position, Quaternion.identity).transform.localScale = new Vector3(100, 100, 100);
             Destroy(this.gameObject);
         }
         

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 514da61389c049c0bdaf31b7f6970d33, type: 3}
-  m_Name: New MixedRealityControllerVisualizationProfile
+  m_Name: New MixedRealityControllerVisualizationProfile 1
   m_EditorClassIdentifier: 
   isCustomProfile: 1
   renderMotionControllers: 1
@@ -22,7 +22,7 @@ MonoBehaviour:
     type: 2}
   globalLeftControllerModel: {fileID: 1370450866519632, guid: 626257b1a6cd47c2a32a18cf75b2fb23,
     type: 3}
-  globalRightControllerModel: {fileID: 1370450866519632, guid: e2b0df939d55cdc489073d2560b1f871,
+  globalRightControllerModel: {fileID: 3731511764287201231, guid: a5f612a680ff02d4e8cb56ebf00b784c,
     type: 3}
   globalLeftHandVisualizer: {fileID: 100002, guid: 95fdbeee899cda941a9083788b822772,
     type: 3}
