@@ -827,6 +827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myToolkit: {fileID: 11400000, guid: 7a44927e148791340917d915981497e8, type: 2}
+  Begin_Toolkit: {fileID: 11400000, guid: dc6e704daef33744e88f333fdd2c735e, type: 2}
 --- !u!1 &853113014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1357,6 +1358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa6846fd6ac506479230e4b48017e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myWeapon: {fileID: 3731511764287201231, guid: a5f612a680ff02d4e8cb56ebf00b784c,
+    type: 3}
 --- !u!65 &1569364515
 BoxCollider:
   m_ObjectHideFlags: 0

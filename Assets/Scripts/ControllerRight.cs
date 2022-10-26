@@ -17,6 +17,10 @@ public class ControllerRight : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        myToolkit.GetComponent<ToolKit>().changed();
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Weapon"))
+        {
+            myToolkit.GetComponent<ToolKit>().changed();
+        }
+        
     }
 }

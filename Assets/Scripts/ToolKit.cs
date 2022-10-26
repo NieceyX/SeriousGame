@@ -6,6 +6,7 @@ using UnityEngine;
 public class ToolKit : MonoBehaviour
 {
     [SerializeField] MixedRealityToolkitConfigurationProfile myToolkit;
+    [SerializeField] MixedRealityToolkitConfigurationProfile Begin_Toolkit;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +20,14 @@ public class ToolKit : MonoBehaviour
     }
     public void changed()
     {
-        MixedRealityToolkit.Instance.ActiveProfile = myToolkit;
-
-        Debug.Log("eee");
+        if (MixedRealityToolkit.Instance.ActiveProfile == Begin_Toolkit)
+        {
+            MixedRealityToolkit.Instance.ActiveProfile = myToolkit;
+        }
+        else
+        {
+            MixedRealityToolkit.Instance.ActiveProfile = Begin_Toolkit;
+        }
+        
     }
 }
