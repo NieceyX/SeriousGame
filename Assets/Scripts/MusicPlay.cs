@@ -34,10 +34,10 @@ public class MusicPlay : MonoBehaviour
         time++;
     }
 
-    /* void OnCollisionEnter(Collision coll)
-     {
-         audioSource.Play();
-         Debug.Log("play sound");
-     }
-    */
+   /* void OnCollisionEnter(Collision coll)
+    {
+        audioSource.Play();
+        Debug.Log("play sound");
+    }
+   */
 }
