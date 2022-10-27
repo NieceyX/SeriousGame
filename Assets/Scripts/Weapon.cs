@@ -16,9 +16,14 @@ public class Weapon : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if (other.gameObject.layer == LayerMask.NameToLayer("Controller") )
+        {
+            Destroy(gameObject);
+        }
+
+       
 
     }
 }

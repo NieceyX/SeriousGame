@@ -15,11 +15,12 @@ public class ControllerRight : MonoBehaviour
         myToolkit = FindObjectOfType<MixedRealityToolkit>();
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Weapon"))
+        if (other.gameObject.layer == LayerMask.NameToLayer("Weapon") && myToolkit.GetComponent<ToolKit>().GetCanPickWeapon())
         {
             myToolkit.GetComponent<ToolKit>().changed();
+            Destroy(other.gameObject);
         }
         
     }
