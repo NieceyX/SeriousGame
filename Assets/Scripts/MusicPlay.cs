@@ -7,17 +7,31 @@ public class MusicPlay : MonoBehaviour
     [Header("Note  audio")]
     public AudioSource audioSource;
 
+    public int cooldown = 10;
+    private int time = 5;
+
+    void Start()
+    {
+        time = cooldown;
+    }
+
     void Update()
     {
-        Collider[] colls = Physics.OverlapSphere(this.transform.position, 0.7f);
-        foreach (Collider item in colls)
+        if (time >= cooldown)
         {
-            if (item.gameObject.tag == "GameController")
+            Collider[] colls = Physics.OverlapSphere(this.transform.position, 0.1f);
+            foreach (Collider item in colls)
             {
-                audioSource.Play();
-                Debug.Log("play sound");
+                if (item.gameObject.tag == "GameController")
+                {
+                    audioSource.Play();
+                    Debug.Log("play sound");
+                    time = 0;
+                    break;
+                }
             }
         }
+        time++;
     }
 
    /* void OnCollisionEnter(Collision coll)
