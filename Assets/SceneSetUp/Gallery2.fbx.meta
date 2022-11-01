@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: efc5aad8b3146134383f5e28d4248fde
+guid: 38ca9e2fc115ad5418e17393b6ece428
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Relaxation_rOOM
-    second: {fileID: 2100000, guid: 9239267f6295a894fb0aba146d4540c5, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
