@@ -25,11 +25,11 @@ public class ThumbstickMover : InputSystemGlobalListener, IMixedRealityInputHand
             Debug.Log(eventData.InputData);
             if (eventData.MixedRealityInputAction == moveAction && (Mathf.Abs(eventData.InputData.x) >= 0.5f || Mathf.Abs(eventData.InputData.y) >= 0.5f))
             {
-                Vector3 temp = new Vector3(eventData.InputData.x, 1.5f, eventData.InputData.y);
+                Vector3 temp = new Vector3(eventData.InputData.x, 0.5f, eventData.InputData.y);
                 Vector3 localDelta = speed * temp;
                 Debug.Log(localDelta);
                 Vector3 tempPosition = transform.position + transform.GetChild(0).rotation * localDelta;
-                transform.position = new Vector3(tempPosition.x, 1.5f, tempPosition.z);
+                transform.position = new Vector3(tempPosition.x, 0.5f, tempPosition.z);
 
             }
         }
