@@ -23,9 +23,16 @@ public class BreakingObject : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Weapon"))
         {
+            Debug.Log(this.gameObject.GetComponent<Rigidbody>().velocity.x);
+            if (Mathf.Abs(this.gameObject.GetComponent<Rigidbody>().velocity.x) > 0.3f || 
+                Mathf.Abs(this.gameObject.GetComponent<Rigidbody>().velocity.y) > 0.3f || 
+                Mathf.Abs(this.gameObject.GetComponent<Rigidbody>().velocity.z) > 0.3f)
+            {
+                Instantiate(AfterBreak, this.transform.position, Quaternion.identity).transform.localScale = new Vector3(100, 100, 100);
+                Destroy(this.gameObject);
+            }
             /*   Instantiate(AfterBreak, this.transform.position, Quaternion.identity);*/
-            Instantiate(AfterBreak, this.transform.position, Quaternion.identity).transform.localScale = new Vector3(100, 100, 100);
-            Destroy(this.gameObject);
+
         }
         
     }
