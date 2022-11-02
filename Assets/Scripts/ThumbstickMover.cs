@@ -19,10 +19,6 @@ public class ThumbstickMover : InputSystemGlobalListener, IMixedRealityInputHand
     {
         if (eventData.MixedRealityInputAction == moveAction)
         {
-
-            
-            Debug.Log("Input: ");
-            Debug.Log(eventData.InputData);
             if (eventData.MixedRealityInputAction == moveAction && (Mathf.Abs(eventData.InputData.x) >= 0.5f || Mathf.Abs(eventData.InputData.y) >= 0.5f))
             {
                 Vector3 temp = new Vector3(eventData.InputData.x, 0.5f, eventData.InputData.y);
