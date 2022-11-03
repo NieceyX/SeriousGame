@@ -1,5 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8071578923150670680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563994e88e1b8414890b10d6bac7a456, type: 3}
+  m_Name: RageLoop_V1_02
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 9321
+    y: 10000.5
+    width: 300
+    height: 110
+  input: {fileID: 0}
+  output: {fileID: -4366962914183281328}
+  file: {fileID: 8300000, guid: 6dc2e0f2881686745b1ffd1bd4be1a2d, type: 3}
+  volumeOffset: 0
+  pitchOffset: 0
+  minStartTime: 0
+  maxStartTime: 0
 --- !u!114 &-7943622162979145563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,6 +44,66 @@ MonoBehaviour:
     width: 20
     height: 20
   parentNode: {fileID: -6298772809550197904}
+--- !u!114 &-7822493174237591611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81b464ba9745e44be8820ad1c8cfd6, type: 3}
+  m_Name: OutputInput
+  m_EditorClassIdentifier: 
+  Window:
+    serializedVersion: 2
+    x: 9980
+    y: 10145
+    width: 20
+    height: 20
+  parentNode: {fileID: 7805076538267841818}
+  connectedNodes:
+  - {fileID: -1802136757309157653}
+  forceSingleConnection: 0
+--- !u!114 &-6725277102183080570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb3210b711af0f4ab76fc3bff926f11, type: 3}
+  m_Name: Output
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 10000
+    y: 10000
+    width: 300
+    height: 300
+  input: {fileID: 6599193447624488670}
+  output: {fileID: 0}
+  mixerGroup: {fileID: 0}
+  MinVolume: 1
+  MaxVolume: 1
+  MinPitch: 1
+  MaxPitch: 1
+  loop: 0
+  spatialBlend: 0
+  HRTF: 0
+  MaxDistance: 10
+  attenuationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dopplerLevel: 1
+  ReverbZoneMix: 1
+  Spread: 0
 --- !u!114 &-6298772809550197904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63,6 +148,25 @@ MonoBehaviour:
     width: 20
     height: 20
   parentNode: {fileID: 1616026447038680111}
+--- !u!114 &-4366962914183281328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f45cf000cc6667c4e9ad0ade0cfc82a7, type: 3}
+  m_Name: Audio FileOutput
+  m_EditorClassIdentifier: 
+  Window:
+    serializedVersion: 2
+    x: 9621
+    y: 10045.5
+    width: 20
+    height: 20
+  parentNode: {fileID: -8071578923150670680}
 --- !u!114 &-3901466992405113408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,6 +230,31 @@ MonoBehaviour:
   dopplerLevel: 1
   ReverbZoneMix: 1
   Spread: 0
+--- !u!114 &-3851346396128480874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563994e88e1b8414890b10d6bac7a456, type: 3}
+  m_Name: GameStart
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 9325
+    y: 9945.5
+    width: 300
+    height: 110
+  input: {fileID: 0}
+  output: {fileID: -1802136757309157653}
+  file: {fileID: 8300000, guid: 972ab9767677c2547970e54b0524756e, type: 3}
+  volumeOffset: 0
+  pitchOffset: 0
+  minStartTime: 0
+  maxStartTime: 0
 --- !u!114 &-3615348890231031703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +274,44 @@ MonoBehaviour:
     width: 20
     height: 20
   parentNode: {fileID: 5110853641121570285}
+--- !u!114 &-3359873112133240311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb3210b711af0f4ab76fc3bff926f11, type: 3}
+  m_Name: Output
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 10000
+    y: 10000
+    width: 300
+    height: 300
+  input: {fileID: 4291877718037554003}
+  output: {fileID: 0}
+  mixerGroup: {fileID: 0}
+  MinVolume: 1
+  MaxVolume: 1
+  MinPitch: 1
+  MaxPitch: 1
+  loop: 0
+  spatialBlend: 0
+  HRTF: 0
+  MaxDistance: 10
+  attenuationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dopplerLevel: 1
+  ReverbZoneMix: 1
+  Spread: 0
 --- !u!114 &-3199670751686562140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +331,152 @@ MonoBehaviour:
     width: 20
     height: 20
   parentNode: {fileID: 8959606337545022137}
+--- !u!114 &-3121680609972933987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d6a001556e463478b5c476e3e6195c, type: 3}
+  m_Name: RelaxRoom
+  m_EditorClassIdentifier: 
+  instanceLimit: 0
+  fadeIn: 0
+  fadeOut: 0
+  group: 0
+  nodes:
+  - {fileID: -3359873112133240311}
+  - {fileID: -2481394203150962489}
+  output: {fileID: -3359873112133240311}
+  parameters: []
+--- !u!114 &-2888324623328094297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81b464ba9745e44be8820ad1c8cfd6, type: 3}
+  m_Name: OutputInput
+  m_EditorClassIdentifier: 
+  Window:
+    serializedVersion: 2
+    x: 9980
+    y: 10145
+    width: 20
+    height: 20
+  parentNode: {fileID: -2326397989157528858}
+  connectedNodes:
+  - {fileID: 8807284348919860354}
+  forceSingleConnection: 0
+--- !u!114 &-2481394203150962489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563994e88e1b8414890b10d6bac7a456, type: 3}
+  m_Name: RelaxLoop_02
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 9332
+    y: 10001.5
+    width: 300
+    height: 110
+  input: {fileID: 0}
+  output: {fileID: 5839136907349797541}
+  file: {fileID: 8300000, guid: 2720fbbfa57d4d8449eecee04a575600, type: 3}
+  volumeOffset: 0
+  pitchOffset: 0
+  minStartTime: 0
+  maxStartTime: 0
+--- !u!114 &-2386957726646526567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d6a001556e463478b5c476e3e6195c, type: 3}
+  m_Name: RageIntro
+  m_EditorClassIdentifier: 
+  instanceLimit: 0
+  fadeIn: 0
+  fadeOut: 0
+  group: 0
+  nodes:
+  - {fileID: -2326397989157528858}
+  - {fileID: 1579328175900253541}
+  output: {fileID: -2326397989157528858}
+  parameters: []
+--- !u!114 &-2326397989157528858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb3210b711af0f4ab76fc3bff926f11, type: 3}
+  m_Name: Output
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 10000
+    y: 10000
+    width: 300
+    height: 300
+  input: {fileID: -2888324623328094297}
+  output: {fileID: 0}
+  mixerGroup: {fileID: 0}
+  MinVolume: 1
+  MaxVolume: 1
+  MinPitch: 1
+  MaxPitch: 1
+  loop: 0
+  spatialBlend: 0
+  HRTF: 0
+  MaxDistance: 10
+  attenuationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dopplerLevel: 1
+  ReverbZoneMix: 1
+  Spread: 0
+--- !u!114 &-1802136757309157653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f45cf000cc6667c4e9ad0ade0cfc82a7, type: 3}
+  m_Name: Audio FileOutput
+  m_EditorClassIdentifier: 
+  Window:
+    serializedVersion: 2
+    x: 9625
+    y: 9990.5
+    width: 20
+    height: 20
+  parentNode: {fileID: -3851346396128480874}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +491,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioEvents:
   - {fileID: 4539705075961618163}
+  - {fileID: 8621244377319428379}
+  - {fileID: -2386957726646526567}
+  - {fileID: 4381045157352522656}
+  - {fileID: -3121680609972933987}
   parameters: []
   switches: []
 --- !u!114 &145744132899691787
@@ -225,6 +542,31 @@ MonoBehaviour:
   - {fileID: -5463640727761803724}
   - {fileID: -3615348890231031703}
   forceSingleConnection: 0
+--- !u!114 &1579328175900253541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563994e88e1b8414890b10d6bac7a456, type: 3}
+  m_Name: RageLoop_Intro_01
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 9260
+    y: 9995.5
+    width: 300
+    height: 110
+  input: {fileID: 0}
+  output: {fileID: 8807284348919860354}
+  file: {fileID: 8300000, guid: 28ef45c8448529647bd0548de91f425b, type: 3}
+  volumeOffset: 0
+  pitchOffset: 0
+  minStartTime: 0
+  maxStartTime: 0
 --- !u!114 &1616026447038680111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,6 +592,49 @@ MonoBehaviour:
   pitchOffset: 0
   minStartTime: 0
   maxStartTime: 0
+--- !u!114 &4291877718037554003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81b464ba9745e44be8820ad1c8cfd6, type: 3}
+  m_Name: OutputInput
+  m_EditorClassIdentifier: 
+  Window:
+    serializedVersion: 2
+    x: 9980
+    y: 10145
+    width: 20
+    height: 20
+  parentNode: {fileID: -3359873112133240311}
+  connectedNodes:
+  - {fileID: 5839136907349797541}
+  forceSingleConnection: 0
+--- !u!114 &4381045157352522656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d6a001556e463478b5c476e3e6195c, type: 3}
+  m_Name: RageRoom
+  m_EditorClassIdentifier: 
+  instanceLimit: 0
+  fadeIn: 0
+  fadeOut: 0
+  group: 0
+  nodes:
+  - {fileID: -6725277102183080570}
+  - {fileID: -8071578923150670680}
+  output: {fileID: -6725277102183080570}
+  parameters: []
 --- !u!114 &4539705075961618163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +706,25 @@ MonoBehaviour:
   pitchOffset: 0
   minStartTime: 0
   maxStartTime: 0
+--- !u!114 &5839136907349797541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f45cf000cc6667c4e9ad0ade0cfc82a7, type: 3}
+  m_Name: Audio FileOutput
+  m_EditorClassIdentifier: 
+  Window:
+    serializedVersion: 2
+    x: 9632
+    y: 10046.5
+    width: 20
+    height: 20
+  parentNode: {fileID: -2481394203150962489}
 --- !u!114 &5928444047251778788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,6 +744,28 @@ MonoBehaviour:
     width: 20
     height: 20
   parentNode: {fileID: -3901466992405113408}
+--- !u!114 &6599193447624488670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a81b464ba9745e44be8820ad1c8cfd6, type: 3}
+  m_Name: OutputInput
+  m_EditorClassIdentifier: 
+  Window:
+    serializedVersion: 2
+    x: 9980
+    y: 10145
+    width: 20
+    height: 20
+  parentNode: {fileID: -6725277102183080570}
+  connectedNodes:
+  - {fileID: -4366962914183281328}
+  forceSingleConnection: 0
 --- !u!114 &7291186831502920938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +788,84 @@ MonoBehaviour:
   connectedNodes:
   - {fileID: 145744132899691787}
   forceSingleConnection: 0
+--- !u!114 &7805076538267841818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feb3210b711af0f4ab76fc3bff926f11, type: 3}
+  m_Name: Output
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 10000
+    y: 10000
+    width: 300
+    height: 300
+  input: {fileID: -7822493174237591611}
+  output: {fileID: 0}
+  mixerGroup: {fileID: 0}
+  MinVolume: 1
+  MaxVolume: 1
+  MinPitch: 1
+  MaxPitch: 1
+  loop: 0
+  spatialBlend: 0
+  HRTF: 0
+  MaxDistance: 10
+  attenuationCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dopplerLevel: 1
+  ReverbZoneMix: 1
+  Spread: 0
+--- !u!114 &8621244377319428379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d6a001556e463478b5c476e3e6195c, type: 3}
+  m_Name: StartMusic
+  m_EditorClassIdentifier: 
+  instanceLimit: 0
+  fadeIn: 0
+  fadeOut: 0
+  group: 0
+  nodes:
+  - {fileID: 7805076538267841818}
+  - {fileID: -3851346396128480874}
+  output: {fileID: 7805076538267841818}
+  parameters: []
+--- !u!114 &8807284348919860354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f45cf000cc6667c4e9ad0ade0cfc82a7, type: 3}
+  m_Name: Audio FileOutput
+  m_EditorClassIdentifier: 
+  Window:
+    serializedVersion: 2
+    x: 9560
+    y: 10040.5
+    width: 20
+    height: 20
+  parentNode: {fileID: 1579328175900253541}
 --- !u!114 &8959606337545022137
 MonoBehaviour:
   m_ObjectHideFlags: 0
