@@ -23,7 +23,6 @@ public class BreakingObject : MonoBehaviour
     
     void OnCollisionEnter(Collision collision)
     {
-        AudioManager.PlayEvent(this.GlassBreak, this.gameObject);
         if (collision.gameObject.layer == LayerMask.NameToLayer("Weapon"))
         {
             Debug.Log(this.gameObject.GetComponent<Rigidbody>().velocity.x);
@@ -32,7 +31,7 @@ public class BreakingObject : MonoBehaviour
                 Mathf.Abs(this.gameObject.GetComponent<Rigidbody>().velocity.z) > 0.3f)
             {
                 Instantiate(AfterBreak, this.transform.position, Quaternion.identity).transform.localScale = new Vector3(100, 100, 100);
-                //AudioManager.PlayEvent(this.GlassBreak, this.gameObject);
+                AudioManager.PlayEvent(this.GlassBreak, this.gameObject);
                 Destroy(this.gameObject);
             }
             /*   Instantiate(AfterBreak, this.transform.position, Quaternion.identity);*/
