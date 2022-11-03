@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class MenuActivate : MonoBehaviour
 {
-    public GameObject exit;
-    public GameObject restart;
+    public GameObject menuButtons;
 
     public void doActivate()
     {
-        exit.SetActive(!exit.activeSelf);
-        restart.SetActive(!restart.activeSelf);
+        menuButtons.SetActive(!menuButtons.activeSelf);
     }
 }
