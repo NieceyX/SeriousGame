@@ -23,7 +23,6 @@ public class ThumbstickMover : InputSystemGlobalListener, IMixedRealityInputHand
             {
                 Vector3 temp = new Vector3(eventData.InputData.x, 0f, eventData.InputData.y);
                 Vector3 localDelta = speed * temp;
-                Debug.Log(localDelta);
                 Vector3 tempPosition = transform.position + transform.GetChild(0).rotation * localDelta;
                 transform.position = new Vector3(tempPosition.x, 0.1f, tempPosition.z);
 

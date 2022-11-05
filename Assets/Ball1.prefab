@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1448852328543212793}
   - component: {fileID: 8469657194134703310}
   - component: {fileID: -4469398308042954568}
+  - component: {fileID: 84012669689372005}
   m_Layer: 0
   m_Name: Ball1
   m_TagString: Untagged
@@ -112,3 +113,16 @@ MonoBehaviour:
   AfterBreak: {fileID: 1805389493065635645, guid: e596ad627b0497d4c91b64395dcfa59e,
     type: 3}
   size: 9
+--- !u!135 &84012669689372005
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875824270004117541}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.057878874
+  m_Center: {x: 0.00000010430813, y: 0, z: -0.000000022351742}
