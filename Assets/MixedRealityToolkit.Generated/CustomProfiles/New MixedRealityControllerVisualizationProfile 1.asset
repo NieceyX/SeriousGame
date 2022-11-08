@@ -20,7 +20,7 @@ MonoBehaviour:
   usePlatformModels: 1
   platformModelMaterial: {fileID: 2100000, guid: 54322026142964d4084eda2478d9b1a2,
     type: 2}
-  globalLeftControllerModel: {fileID: 1370450866519632, guid: 626257b1a6cd47c2a32a18cf75b2fb23,
+  globalLeftControllerModel: {fileID: 1370450866519632, guid: 60b24c9a73f9f5549b32035f8c864cc7,
     type: 3}
   globalRightControllerModel: {fileID: 3731511764287201231, guid: a5f612a680ff02d4e8cb56ebf00b784c,
     type: 3}

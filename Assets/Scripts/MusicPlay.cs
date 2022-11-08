@@ -8,6 +8,7 @@ public class MusicPlay : MonoBehaviour
     public AudioSource audioSource;
 
     public int cooldown = 10;
+    public float radius = 1;
     private int time = 5;
 
     void Start()
@@ -19,7 +20,7 @@ public class MusicPlay : MonoBehaviour
     {
         if (time >= cooldown)
         {
-            Collider[] colls = Physics.OverlapSphere(this.transform.position, 0.1f);
+            Collider[] colls = Physics.OverlapSphere(this.transform.position, radius);
             foreach (Collider item in colls)
             {
                 if (item.gameObject.tag == "GameController")
