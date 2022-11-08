@@ -1,0 +1,17 @@
+{
+  "name": "com.microsoft.edt.lib.audiomanager",
+  "version": "0.1.9",
+  "displayName": "lib.audiomanager",
+  "description": "Adds an audio event system for complex sound behaviors and controls.",
+  "unity": "2019.4",
+  "keywords": [
+    "audio",
+    "sound"
+  ],
+  "author": {
+    "name": "Microsoft",
+    "email": "joekelly@microsoft.com"
+  },
+  "type": "library",
+  "hideInEditor": false
+}
