@@ -87,8 +87,8 @@ MonoBehaviour:
   input: {fileID: 6599193447624488670}
   output: {fileID: 0}
   mixerGroup: {fileID: 0}
-  MinVolume: 1
-  MaxVolume: 1
+  MinVolume: 0.546875
+  MaxVolume: 0.704
   MinPitch: 1
   MaxPitch: 1
   loop: 0
@@ -295,8 +295,8 @@ MonoBehaviour:
   input: {fileID: 4291877718037554003}
   output: {fileID: 0}
   mixerGroup: {fileID: 0}
-  MinVolume: 1
-  MaxVolume: 1
+  MinVolume: 0.088
+  MaxVolume: 0.26
   MinPitch: 1
   MaxPitch: 1
   loop: 0
