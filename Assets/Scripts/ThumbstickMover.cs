@@ -14,7 +14,10 @@ public class ThumbstickMover : InputSystemGlobalListener, IMixedRealityInputHand
     private void InputSystemGlobalListenerStart()
     {
         rb = GetComponent<Rigidbody>(); //rb equals the rigidbody on the player
+        transform.position = new Vector3(transform.position.x, 10f, transform.position.z);
     }
+
+    
     public void OnInputChanged(InputEventData<Vector2> eventData)
     {
         if (eventData.MixedRealityInputAction == moveAction)
@@ -24,16 +27,16 @@ public class ThumbstickMover : InputSystemGlobalListener, IMixedRealityInputHand
                 Vector3 temp = new Vector3(eventData.InputData.x, 0f, eventData.InputData.y);
                 Vector3 localDelta = speed * temp;
                 Vector3 tempPosition = transform.position + transform.GetChild(0).rotation * localDelta;
-                /*    transform.position = new Vector3(tempPosition.x, 0.1f, tempPosition.z);*/
+                transform.position = new Vector3(tempPosition.x, 10f, tempPosition.z);
 
-                if (transform.position.x > -10f)
-                {
-                    transform.position = new Vector3(tempPosition.x, 0.1f, tempPosition.z);
-                }
-                else
-                {
-                    transform.position = new Vector3(tempPosition.x + 1, 0.1f, tempPosition.z);
-                }
+                /*                if (transform.position.x > -10f)
+                                {
+                                    transform.position = new Vector3(tempPosition.x, 0.1f, tempPosition.z);
+                                }
+                                else
+                                {
+                                    transform.position = new Vector3(tempPosition.x + 0.1f, 0.1f, tempPosition.z);
+                                }*/
 
             }
         }
