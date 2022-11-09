@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3160359552442544559}
   - component: {fileID: 8052035433302975068}
   m_Layer: 0
-  m_Name: P_cushion (1)
+  m_Name: SmalTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 16dd53abbaad7fb49ab400a161b79b77, type: 2}
+  - {fileID: 2100000, guid: 7d85bb2d08e23ef4bbd72c7bfffc9d9c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -126,3 +126,5 @@ MonoBehaviour:
   AfterBreak: {fileID: 8684181481909551425, guid: 1b8e935f4d90eb14dabba57211164020,
     type: 3}
   size: 3
+  BreakSpeed: 0.3
+  GlassBreak: {fileID: 0}
